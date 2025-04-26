@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>购物车</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="cart-container">
+      <div class="nav-bar">
+        <div class="nav-bar__left">
+          <button class="back-button">
+            <i class="icon-arrow-left">←</i>
+            <span>返回</span>
+          </button>
+        </div>
+        <div class="nav-bar__title">购物车</div>
+      </div>
+
+      <div class="cart-tabs">
+        <div class="tabs">
+          <div class="tabs__nav">
+            <div class="tab tab--active" data-tab="all">全部(132)</div>
+            <div class="tab" data-tab="discount">降价(53)</div>
+            <div class="tab" data-tab="history">浏览历史</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <!-- 购物车商品列表将由 JavaScript 动态生成 -->
+      </div>
+
+      <div class="cart-footer">
+        <div class="submit-bar">
+          <div class="submit-bar__text">
+            <span>合计：</span>
+            <span class="submit-bar__price">¥<span id="totalPrice">0.00</span></span>
+          </div>
+          <button class="submit-button" id="submitButton">
+            移入收藏夹
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
